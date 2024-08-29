@@ -1,0 +1,185 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #2196f3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.marquee {
+    display: inline-block;
+    padding: 10px;
+    background-color: #2196f3;
+    color: #fff;
+    font-weight: bold;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee_footer {
+    display: inline-block;
+    padding: 10px;
+    background-color: #dc143c;
+    color: #fff;
+    font-weight: bold;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.section-map {
+    padding: 1rem 0;
+    background-color: #f0f0f0;
+}
+
+.map-container {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ddd;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+}
+
+.section-map h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+
+.section {
+    padding: 60px 0;
+}
+
+.section-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
+
+.back-to-top {
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.back-to-top:hover {
+    color: #ffeb3b;
+}
+
+#theme-toggle {
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.card-reveal {
+    display: none;
+}
+
+.card.active .card-reveal {
+    display: block;
+}
+
+.card-reveal .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-reveal ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.center-align {
+    text-align: center;
+}
+
+a {
+    transition: color 0.3s;
+    color: inherit; /* Ensure default color is set */
+}
+
+a:hover {
+    color: #ffeb3b;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+.input-field input[type="text"]:focus + label,
+.input-field input[type="email"]:focus + label,
+.input-field textarea:focus + label {
+    color: #ffeb3b;
+}
+
+.input-field input[type="text"]:focus,
+.input-field input[type="email"]:focus,
+.input-field textarea:focus {
+    border-bottom: 1px solid #ffeb3b;
+    box-shadow: 0 1px 0 0 #ffeb3b;
+}
